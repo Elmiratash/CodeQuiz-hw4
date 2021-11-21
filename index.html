@@ -1,1 +1,65 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Code Quiz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Stylesheet.css" />
+</head>
+
+
+<body>
+    <header>
+        <section>
+            <div>
+                <p id="btn">Scores</p>
+                <p class="time timerClock">Time:60s</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="first">
+            <div class="hello">
+                <h1>Code Quiz Challenge!</h1>
+                <p>Try to answer the following code-related questions within the time limit.</p>
+                <button id="start" type="button" class="btn">Start Quiz!</button></p>
+            </div>
+        </section>
+
+        <section id="questions">
+            <h2 style="text-align: center;" ; id="question"></h2>
+            <ul class="choices">
+                <li><button id="answer1" value="0" type="button" class="btn ansBtn">Answer1</button></li>
+                <li><button id="answer2" value="1" type="button" class="btn ansBtn">Answer2</button></li>
+                <li><button id="answer3" value="2" type="button" class="btn ansBtn">Answer3</button></li>
+                <li><button id="answer4" value="3" type="button" class="btn ansBtn">Answer4</button></li>
+            </ul>
+            <div class="result" id="result"></div>
+        </section>
+
+        <section id="final">
+            <div class="goodbye">
+                <h2>Code Quiz Complete!</h2>
+                <p>Your final score is: <span id="score">0</span></p>
+                <p>Enter Name: <span><input id="name" /></span>
+                    <button id="submit-score" class="btn">Submit</button></p>
+            </div>
+        </section>
+
+        <section id="highscores">
+            <div class="goodbye">
+                <h2>High Scores</h2>
+                <ol id="score-list"></ol>
+                <button id="goback" class="btn">Go back</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./Script.js"></script>
+</body>
+
+</html>
